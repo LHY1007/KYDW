@@ -6,8 +6,7 @@
 
 - 工作流文件：`.github/workflows/static.yml`
 - 自动触发：
-  - 任意分支 `push` 都会触发校验（verify）
-  - 仅 `main/master` 或手动触发会执行发布（deploy）
+
   - 支持 `workflow_dispatch` 手动发布
 - 发布前校验：检查首页、样式、渲染脚本和 `data/*.json` 是否存在
 - 产物处理：自动生成 `.nojekyll`，避免 Jekyll 干扰静态资源
@@ -19,7 +18,7 @@
    - **Source = GitHub Actions**
 3. 保存后，推送到默认分支（例如 `main`）即可自动发布。
 
-> 如果你的默认分支不是 `main/master`（例如 `work`），请把 `.github/workflows/static.yml` 里的 `deploy.if` 分支条件加上你的分支名。
+
 
 ## 发布后的访问地址
 
@@ -54,17 +53,10 @@ python -m http.server 8000
 ## 常见“没有反应”排查
 
 1. 看 **Actions** 页是否有 `Deploy static content to Pages` 工作流运行记录。
-2. 没有运行记录：先去 **Settings → Actions → General**，确认仓库 Actions 已启用（Allow all actions and reusable workflows）。
+
 3. 有运行但失败：点开日志看 `Validate core files` 哪个文件缺失。
 4. 运行成功但页面还是旧内容：
    - 等 1-3 分钟 CDN 刷新
    - 强制刷新浏览器（`Ctrl/Cmd + Shift + R`）
    - 确认访问的是正确地址（项目仓库通常要带仓库名路径）
-5. 如果一直 0 runs，执行一次空提交触发：
 
-```bash
-git commit --allow-empty -m "chore: trigger pages workflow"
-git push origin main
-```
-
-6. 对于 fork 仓库，建议在 **Actions** 页面左侧点进该 workflow，手动点 **Run workflow** 做首次验证。
