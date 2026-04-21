@@ -4,8 +4,7 @@ name: Deploy static content to Pages
 on:
   push:
     branches:
-      - main
-      - master
+
 
   workflow_dispatch:
 
@@ -22,7 +21,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
   deploy:
+    if: github.event_name == 'workflow_dispatch' || github.ref_name == 'main' || github.ref_name == 'master'
+    needs: verify
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -31,16 +33,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate core files
-        run: |
-          test -f index.html
-          test -f static/css/main.css
-          test -f static/js/content-render.js
-          test -f data/members.json
-          test -f data/activities.json
-          test -f data/publications.json
-          test -f data/highlights.json
-          test -f data/news.json
 
       - name: Add .nojekyll
         run: touch .nojekyll

@@ -6,7 +6,7 @@
 
 - 工作流文件：`.github/workflows/static.yml`
 - 自动触发：
-  - `push` 到 `main/master` 会触发发布
+
   - 支持 `workflow_dispatch` 手动发布
 - 发布前校验：检查首页、样式、渲染脚本和 `data/*.json` 是否存在
 - 产物处理：自动生成 `.nojekyll`，避免 Jekyll 干扰静态资源
@@ -18,7 +18,7 @@
    - **Source = GitHub Actions**
 3. 保存后，推送到默认分支（例如 `main`）即可自动发布。
 
-> 如果你的默认分支不是 `main/master`（例如 `work`），请把 `.github/workflows/static.yml` 里 `on.push.branches` 改成你的默认分支名。
+
 
 ## 发布后的访问地址
 
@@ -53,9 +53,10 @@ python -m http.server 8000
 ## 常见“没有反应”排查
 
 1. 看 **Actions** 页是否有 `Deploy static content to Pages` 工作流运行记录。
-2. 没有运行记录：通常是因为没有推送到工作流监听分支（当前监听 `main/master`）。
+
 3. 有运行但失败：点开日志看 `Validate core files` 哪个文件缺失。
 4. 运行成功但页面还是旧内容：
    - 等 1-3 分钟 CDN 刷新
    - 强制刷新浏览器（`Ctrl/Cmd + Shift + R`）
    - 确认访问的是正确地址（项目仓库通常要带仓库名路径）
+
