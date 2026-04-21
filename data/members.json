@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Dongchen Wu",
+    "role": "Current Leader",
+    "period": "2025-present",
+    "affiliation": "Northeastern University",
+    "group": "current_leaders",
+    "avatar": "static/assets/img/leader/hanyu_photo.png"
+  },
+  {
+    "name": "Haotian Tang",
+    "role": "Current Leader",
+    "period": "2025-present",
+    "affiliation": "Northeastern University",
+    "group": "current_leaders",
+    "avatar": "static/assets/img/leader/hanyu_photo.png"
+  },
+  {
+    "name": "Hanyu Cui",
+    "role": "Current Leader",
+    "period": "2025-present",
+    "affiliation": "Northeastern University",
+    "group": "current_leaders",
+    "avatar": "static/assets/img/leader/hanyu_photo.png"
+  },
+  {
+    "name": "Xidong Wu",
+    "role": "Previous Leader",
+    "period": "2024-2025",
+    "affiliation": "Northeastern University",
+    "group": "previous_leaders",
+    "avatar": "static/assets/img/leader/hanyu_photo.png"
+  },
+  {
+    "name": "Hanyu Liu",
+    "role": "Founder & Previous Leader",
+    "period": "2023-2025",
+    "affiliation": "Northeastern University",
+    "group": "previous_leaders",
+    "avatar": "static/assets/img/leader/hanyu_photo.png"
+  },
+  {
+    "name": "KYDW Members",
+    "role": "All Team Members",
+    "period": "Current",
+    "affiliation": "Multi-university",
+    "group": "members",
+    "profile_url": "https://senli1073.github.io/members.html",
+    "avatar": "static/assets/img/photo.png"
+  }
+]

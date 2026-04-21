@@ -1,0 +1,34 @@
+[
+  {
+    "title": "CCF A Conference Paper",
+    "venue": "CCF A",
+    "year": 2025,
+    "type": "Conference",
+    "summary": "1 paper accepted at a CCF A-level conference.",
+    "tags": ["AI", "Medical AI"]
+  },
+  {
+    "title": "SCI Q1 Journal Papers",
+    "venue": "SCI Q1",
+    "year": 2025,
+    "type": "Journal",
+    "summary": "6 SCI Q1 papers (including 2 top-tier).",
+    "tags": ["Journal", "Top-tier"]
+  },
+  {
+    "title": "CCF B + Workshop Papers",
+    "venue": "CCF B",
+    "year": 2025,
+    "type": "Conference",
+    "summary": "1 CCF B paper + 3 workshop papers (1 oral).",
+    "tags": ["Conference", "Workshop"]
+  },
+  {
+    "title": "SCI Q2 Journal Papers",
+    "venue": "SCI Q2",
+    "year": 2025,
+    "type": "Journal",
+    "summary": "2 SCI Q2 journal papers.",
+    "tags": ["Journal"]
+  }
+]
