@@ -94,74 +94,15 @@
   <section id="members" class="bg-light py-5">
     <div class="container px-5">
       <h2 class="mb-4">Team Members</h2>
-      <p><strong>Previous leaders</strong> </p>
-      <!-- Leader Photo Row -->
-      <div class="row text-center justify-content-center">
-        <!-- Leader Card -->
-        <div class="col-6 col-sm-4 col-md-3 mb-4">
-          <div class="leader-card position-relative">
-            <img src="static/assets/img/leader/hanyu_photo.png" class="img-fluid rounded-circle shadow"
-              alt="Xidong Wu">
-            <div class="leader-name mt-2">
-              <p>2024-2025 · Xidong Wu</p>
-            </div>
-          </div>
+      <div class="row g-3 align-items-center mb-4">
+        <div class="col-md-7">
+          <input id="member-search" type="search" class="form-control" placeholder="Search by name, role, school..." />
         </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 mb-4">
-          <div class="leader-card position-relative">
-            <img src="static/assets/img/leader/hanyu_photo.png" class="img-fluid rounded-circle shadow"
-              alt="Hanyu Liu">
-            <div class="leader-name mt-2">
-              <p>2023-2025 · Hanyu Liu</p>
-            </div>
-          </div>
+        <div class="col-md-5 text-md-end">
+          <span class="badge text-bg-light border" id="member-count-badge">0 members</span>
         </div>
       </div>
-
-            <p><strong>Current leaders</strong> </p>
-      <!-- Leader Photo Row -->
-      <div class="row text-center justify-content-center">
-        <!-- Leader Card -->
-        <div class="col-6 col-sm-4 col-md-3 mb-4">
-          <div class="leader-card position-relative">
-            <img src="static/assets/img/leader/hanyu_photo.png" class="img-fluid rounded-circle shadow"
-              alt="Dongchen Wu">
-            <div class="leader-name mt-2">
-              <p>2025- · Dongchen Wu</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 mb-4">
-          <div class="leader-card position-relative">
-            <img src="static/assets/img/leader/hanyu_photo.png" class="img-fluid rounded-circle shadow"
-              alt="Haotian Tan">
-            <div class="leader-name mt-2">
-              <p>2025- · Haotian Tang</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-4">
-          <div class="leader-card position-relative">
-            <img src="static/assets/img/leader/hanyu_photo.png" class="img-fluid rounded-circle shadow"
-              alt="Hanyu Cui">
-            <div class="leader-name mt-2">
-              <p>2025- · Hanyu Cui</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <p><strong>Other members</strong> </p>
-  
-      <!-- Link to full members list -->
-      <p class="mt-3">
-        <a href="https://senli1073.github.io/members.html" target="_blank" class="btn btn-primary">
-          View Full Members List
-        </a>
-      </p>
+      <div id="member-groups"></div>
     </div>
   </section>
 
@@ -170,38 +111,7 @@
   <section id="activities" class="py-5">
     <div class="container px-5">
       <h2 class="mb-4">Activities</h2>
-
-      <div class="mb-4">
-        <h5><a href="https://example.com/recruitment" target="_blank">New member training(Long Term)</a></h5>
-        <p>We hold intensive recruitment and training sessions each semester to help new members quickly adapt to academic research and teamwork.</p>
-        <p>Requirements: First- to third-year undergraduates from any university and major who are interested in research.</p>
-      </div>
-
-      <div class="mb-4">
-        <h5><a href="https://example.com/bioai" target="_blank">Bio - AI Workshop(Long Term)</a></h5>
-        <p>Weekly workshops focus on the intersection of biology and artificial intelligence, encouraging interdisciplinary exchange and innovation.</p>
-        <p>Speaker Requirements: Postgraduate (PhD/MPhil/MRes) or equivalent (undergraduate/MSC program graduate students).</p>
-        <p>Audience: Any interested student.</p>
-      </div>
-
-      <div class="mb-4">
-        <h5><a href="https://example.com/admission" target="_blank">Northeastern University MBIE Planning Lecture (2025.10)</a></h5>
-        <p>This lecture will provide students from Northeastern University's School of Medical Engineering with an introduction to relevant career development, sharing cutting-edge developments and past experiences.</p>
-        <p>Speaker: Liu Hanyu (Founder and Leader of KYDW).</p>
-        <p>Audience: Any interested student.</p>
-      </div>
-      
-      <div class="mb-4">
-        <h5><a href="https://example.com/fudan_training" target="_blank">Collaborative Projects(Long Term)</a></h5>
-        <p>For students with established research capabilities, we collaborate on specialized projects based on the current tasks of both the student and the team, aiming to achieve mutual benefit.</p>
-        <p>Collaborator requirements: Published papers (For SCI Q2 journals or CCF B or lower, we require the collaborator to be listed first in the publication).</p>
-      </div>
-    
-      <div class="mb-4">
-        <h5><a href="https://example.com/fudan_training" target="_blank">Fudan University Undergraduate Research Skills Training(2025.9-12)</a></h5>
-        <p>This is a pilot project jointly launched by the University of Cambridge and Fudan University to cultivate undergraduates into future research stars. We will share the disseminable aspects of this project, focusing on research methods and practical skills, as well as practical projects in medical artificial intelligence.</p>
-        <p>Audience: Any interested student.</p>
-      </div>
+      <div id="activity-list" class="row g-3"></div>
     </div>
   </section>
 
@@ -209,24 +119,16 @@
   <section id="achievements" class="py-5">
     <div class="container px-5">
       <h2 class="mb-4">Achievements</h2>
-      <h5>Publications</h5>
-      <ul>
-        <li>1 paper at a CCF A conference</li>
-        <li>6 SCI Q1 journal papers (including 2 TOP-tier)</li>
-        <li>1 paper at a CCF B conference (medical top-tier)</li>
-        <li>3 workshop papers at a CCF B conference (including 1 Oral)</li>
-        <li>2 SCI Q2 journal papers</li>
-      </ul>
-      <h5 class="mt-4">Competitions & Projects</h5>
-      <ul>
-        <li>3 National Innovation Projects (Excellent), 5 rated Good</li>
-        <li>1 Outstanding Winner in Mathematical Contest in Modeling for American College Students</li>
-        <li>3 First Prizes, 5 Second Prizes, and several Third Prizes in Biomedical Engineering Innovation Design
-          Competition</li>
-        <li>7 First Prizes and 10 Second Prizes in other national-level competitions</li>
-      </ul>
-      <h5 class="mt-4">Technology Transfer</h5>
-      <p>Multiple Chinese invention patents and software copyrights</p>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <h5 class="mb-3">Publications</h5>
+          <div id="publication-list" class="vstack gap-3"></div>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-3">Highlights</h5>
+          <ul id="highlight-list" class="list-group"></ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -234,7 +136,7 @@
   <section id="news" class="bg-light py-5">
     <div class="container px-5">
       <h2 class="mb-4">News</h2>
-      <p>Team updates and announcements will be posted here.</p>
+      <div id="news-list" class="timeline"></div>
     </div>
   </section>
 
@@ -269,7 +171,7 @@
 
   <!-- Core JS -->
   <script src="static/js/bootstrap.bundle.min.js"></script>
-  <script src="static/js/scripts.js"></script>
+  <script src="static/js/content-render.js"></script>
 </body>
 
 </html>

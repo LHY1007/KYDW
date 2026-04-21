@@ -1,0 +1,30 @@
+[
+  {
+    "title": "New Member Training",
+    "period": "Long Term",
+    "description": "Intensive recruitment and training sessions each semester to help new members quickly adapt to academic research and teamwork.",
+    "requirements": "First- to third-year undergraduates interested in research.",
+    "link": "#join"
+  },
+  {
+    "title": "Bio-AI Workshop",
+    "period": "Long Term",
+    "description": "Weekly workshops on biology and AI, encouraging interdisciplinary exchange and innovation.",
+    "requirements": "Speakers: postgraduate students or equivalent; audience: any interested student.",
+    "link": "#activities"
+  },
+  {
+    "title": "MBIE Planning Lecture",
+    "period": "2025.10",
+    "description": "Introduction to career development and cutting-edge directions for MBIE students.",
+    "requirements": "Speaker: Liu Hanyu. Audience: any interested student.",
+    "link": "#activities"
+  },
+  {
+    "title": "Collaborative Projects",
+    "period": "Long Term",
+    "description": "Collaborative specialized projects for students with established research capabilities.",
+    "requirements": "Preferred: prior publications or strong project output.",
+    "link": "#contact"
+  }
+]
